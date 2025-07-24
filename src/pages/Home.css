@@ -167,3 +167,37 @@
   max-width: 600px;
   animation: fadeIn 0.8s 0.2s backwards;
 }
+
+.dark .home {
+  background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+  color: #e5e7eb;
+}
+.dark .hero-section {
+  background: linear-gradient(90deg, #1e293b 60%, #059669 100%);
+  color: #e5e7eb;
+  box-shadow: 0 2px 12px 0 rgba(5, 150, 105, 0.12);
+}
+.dark .hero-title,
+.dark .section-title {
+  color: #38bdf8;
+}
+.dark .hero-subtitle {
+  color: #a7f3d0;
+}
+.dark .hero-button {
+  background: #059669;
+  color: #e5e7eb;
+}
+.dark .hero-button:hover,
+.dark .hero-button:focus {
+  background: #38bdf8;
+  color: #18181b;
+}
+.dark .section-text {
+  color: #cbd5e1;
+}
+.dark .mission-section {
+  background: #18181b;
+  color: #e5e7eb;
+  box-shadow: 0 2px 8px 0 rgba(5, 150, 105, 0.08);
+}

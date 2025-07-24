@@ -19,3 +19,7 @@
     opacity: 1;
   }
 }
+
+.dark .layout {
+  color: #e5e7eb;
+}

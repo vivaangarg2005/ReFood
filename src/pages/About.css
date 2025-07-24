@@ -162,3 +162,60 @@
   font-size: 0.98rem;
   line-height: 1.5;
 }
+
+.dark .about-page {
+  background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+  color: #e5e7eb;
+}
+
+.dark .about-hero {
+  background: linear-gradient(90deg, #1e293b 60%, #059669 100%);
+  color: #e5e7eb;
+  box-shadow: 0 2px 12px 0 rgba(5, 150, 105, 0.12);
+}
+
+.dark .about-title,
+.dark .section-heading {
+  color: #38bdf8;
+}
+
+.dark .about-subtitle {
+  color: #a7f3d0;
+}
+
+.dark .about-section {
+  background: #23272f;
+}
+
+.dark .about-content {
+  color: #e5e7eb;
+}
+
+.dark .section-paragraph {
+  color: #cbd5e1;
+}
+
+.dark .values-grid {
+  /* no change needed */
+}
+
+.dark .value-card {
+  background: #18181b;
+  color: #e5e7eb;
+  border-color: #334155;
+  box-shadow: 0 2px 8px 0 rgba(5, 150, 105, 0.08);
+}
+
+.dark .value-card:hover,
+.dark .value-card:focus {
+  background: #23272f;
+  box-shadow: 0 4px 16px 0 rgba(5, 150, 105, 0.18);
+}
+
+.dark .value-title {
+  color: #38bdf8;
+}
+
+.dark .value-text {
+  color: #cbd5e1;
+}

@@ -209,3 +209,74 @@
   color: #16a34a;
   font-size: 0.98rem;
 }
+
+.dark .impact-page {
+  background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+  color: #e5e7eb;
+}
+
+.dark .impact-header {
+  background: linear-gradient(90deg, #1e293b 60%, #059669 100%);
+  color: #e5e7eb;
+  box-shadow: 0 2px 12px 0 rgba(5, 150, 105, 0.12);
+}
+
+.dark .impact-title,
+.dark .impact-stats-title,
+.dark .impact-testimonials-title {
+  color: #38bdf8;
+}
+
+.dark .impact-subtitle {
+  color: #a7f3d0;
+}
+
+.dark .impact-stats {
+  background: #23272f;
+}
+
+.dark .impact-stat-card {
+  background: #18181b;
+  border-color: #334155;
+  color: #e5e7eb;
+  box-shadow: 0 2px 8px 0 rgba(5, 150, 105, 0.08);
+}
+
+.dark .impact-stat-card:hover,
+.dark .impact-stat-card:focus {
+  background: #23272f;
+  border-color: #059669;
+  box-shadow: 0 4px 16px 0 rgba(5, 150, 105, 0.18);
+}
+
+.dark .impact-stat-value {
+  color: #38bdf8;
+}
+
+.dark .impact-stat-label {
+  color: #cbd5e1;
+}
+
+.dark .impact-testimonials {
+  background: #18181b;
+}
+
+.dark .impact-testimonial-card {
+  background: #23272f;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+.dark .impact-testimonial-card:hover,
+.dark .impact-testimonial-card:focus {
+  background: #18181b;
+  border-color: #059669;
+}
+
+.dark .impact-testimonial-quote {
+  color: #cbd5e1;
+}
+
+.dark .impact-testimonial-name {
+  color: #059669;
+}

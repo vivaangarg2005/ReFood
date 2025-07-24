@@ -229,3 +229,97 @@
   margin-top: 1rem;
   animation: fadeIn 0.7s 0.1s backwards;
 }
+
+.dark .contact-page {
+  background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+  color: #e5e7eb;
+}
+
+.dark .contact-header {
+  background: linear-gradient(90deg, #1e293b 60%, #059669 100%);
+  color: #e5e7eb;
+  box-shadow: 0 2px 12px 0 rgba(5, 150, 105, 0.12);
+}
+
+.dark .contact-title {
+  color: #38bdf8;
+}
+
+.dark .contact-subtitle {
+  color: #a7f3d0;
+}
+
+.dark .contact-section {
+  background: #23272f;
+}
+
+.dark .contact-container {
+}
+
+.dark .contact-form-card {
+  background: #18181b;
+  border-color: #334155;
+  color: #e5e7eb;
+  box-shadow: 0 2px 8px 0 rgba(5, 150, 105, 0.08);
+}
+
+.dark .contact-form-heading {
+  color: #38bdf8;
+}
+
+.dark .contact-info {
+  background: #18181b;
+  border-color: #334155;
+  color: #e5e7eb;
+  box-shadow: 0 2px 8px 0 rgba(5, 150, 105, 0.08);
+}
+
+.dark .contact-info p {
+  color: #cbd5e1;
+}
+
+.dark .contact-social-heading {
+  color: #38bdf8;
+}
+
+.dark .contact-social-links a {
+  color: #38bdf8;
+}
+
+.dark .contact-social-links a:hover {
+  color: #059669;
+}
+
+.dark .form-label {
+  color: #e5e7eb;
+}
+
+.dark .form-input,
+.dark .form-group input,
+.dark .form-group select {
+  background: #23272f;
+  color: #e5e7eb;
+  border-color: #334155;
+}
+
+.dark .form-input:focus,
+.dark .form-group input:focus,
+.dark .form-group select:focus {
+  border-color: #059669;
+  box-shadow: 0 0 0 2px #059669;
+}
+
+.dark .submit-button {
+  background: #059669;
+  color: #e5e7eb;
+}
+
+.dark .submit-button:hover,
+.dark .submit-button:focus {
+  background: #38bdf8;
+  color: #18181b;
+}
+
+.dark .form-success {
+  color: #059669;
+}

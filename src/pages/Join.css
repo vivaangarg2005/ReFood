@@ -7,6 +7,11 @@
   animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.dark .join-page {
+  background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+  color: #e5e7eb;
+}
+
 /* === Animations === */
 @keyframes fadeIn {
   from {
@@ -61,12 +66,23 @@
   animation: slideInDown 0.7s ease-out;
 }
 
+.dark .join-header {
+  background: linear-gradient(90deg, #1e293b 60%, #059669 100%);
+  color: #e5e7eb;
+  box-shadow: 0 2px 12px 0 rgba(5, 150, 105, 0.12);
+}
+
 .join-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
   text-shadow: none;
+}
+
+.dark .join-title,
+.dark .join-form-title {
+  color: #38bdf8;
 }
 
 .join-subtitle {
@@ -76,11 +92,19 @@
   color: #e0e7ef;
 }
 
+.dark .join-subtitle {
+  color: #a7f3d0;
+}
+
 /* === Form Section === */
 .join-form-section {
   padding: 3rem 1.5rem;
   background: #f8fafc;
   backdrop-filter: none;
+}
+
+.dark .join-form-section {
+  background: #23272f;
 }
 
 .join-form-container {
@@ -91,6 +115,12 @@
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(34, 211, 238, 0.04);
   animation: cardPopIn 0.7s ease-out;
+}
+
+.dark .join-form-container {
+  background: #18181b;
+  color: #e5e7eb;
+  box-shadow: 0 2px 8px 0 rgba(5, 150, 105, 0.08);
 }
 
 .join-form-title {
@@ -137,6 +167,21 @@
   box-shadow: 0 0 0 2px #e0e7ef;
 }
 
+.dark .form-input,
+.dark .form-group input,
+.dark .form-group select {
+  background: #23272f;
+  color: #e5e7eb;
+  border-color: #334155;
+}
+
+.dark .form-input:focus,
+.dark .form-group input:focus,
+.dark .form-group select:focus {
+  border-color: #059669;
+  box-shadow: 0 0 0 2px #059669;
+}
+
 /* === Submit Button === */
 .submit-button {
   background: #2563eb;
@@ -159,6 +204,17 @@
   transform: translateY(-2px) scale(1.03);
 }
 
+.dark .submit-button {
+  background: #059669;
+  color: #e5e7eb;
+}
+
+.dark .submit-button:hover,
+.dark .submit-button:focus {
+  background: #38bdf8;
+  color: #18181b;
+}
+
 /* === Thank You Message === */
 .thank-you-message {
   text-align: center;
@@ -167,4 +223,8 @@
   font-size: 1rem;
   margin-top: 1rem;
   animation: fadeIn 0.7s ease-in;
+}
+
+.dark .thank-you-message {
+  color: #059669;
 }

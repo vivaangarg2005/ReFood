@@ -50,3 +50,21 @@
   color: #16a34a;
   text-decoration: underline;
 }
+
+.dark .footer {
+  background: #18181b;
+  border-top: 1px solid #334155;
+}
+
+.dark .footer-text {
+  color: #cbd5e1;
+}
+
+.dark .footer-link {
+  color: #38bdf8;
+}
+
+.dark .footer-link:hover,
+.dark .footer-link:focus {
+  color: #059669;
+}

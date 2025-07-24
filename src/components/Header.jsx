@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import "./Header.css";
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,17 +36,20 @@ export default function Header() {
           ))}
         </nav>
 
-        <button
-          className="nav-toggle"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle Menu"
-        >
-          {mobileOpen ? (
-            <X className="nav-icon" />
-          ) : (
-            <Menu className="nav-icon" />
-          )}
-        </button>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <button
+            className="nav-toggle"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle Menu"
+          >
+            {mobileOpen ? (
+              <X className="nav-icon" />
+            ) : (
+              <Menu className="nav-icon" />
+            )}
+          </button>
+          <DarkModeToggle />
+        </div>
       </div>
 
       {mobileOpen && (
