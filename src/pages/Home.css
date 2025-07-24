@@ -1,8 +1,9 @@
 .home {
-  background: linear-gradient(135deg, #f0fdf4 0%, #e0e7ff 100%);
-  color: #1f2937;
+  background: linear-gradient(120deg, #f8fafc 0%, #e5e7eb 100%);
+  color: #22223b;
   min-height: 100vh;
-  animation: fadeInBg 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  animation: fadeInBg 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes fadeInBg {
@@ -15,16 +16,15 @@
 }
 
 .hero-section {
-  background: linear-gradient(120deg, #16a34a 60%, #22d3ee 100%);
-  color: white;
-  padding: 6rem 1.5rem 5rem 1.5rem;
+  background: linear-gradient(90deg, #2563eb 60%, #16a34a 100%);
+  color: #fff;
+  padding: 4rem 1.5rem 3rem 1.5rem;
   text-align: center;
-  border-radius: 0 0 2.5rem 2.5rem;
-  box-shadow: 0 8px 32px 0 rgba(34, 211, 238, 0.15);
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 2px 12px 0 rgba(34, 211, 238, 0.08);
   position: relative;
   overflow: hidden;
-  animation: heroFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-  /* Add floating shape for extra modern effect */
+  animation: heroFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-section::after {
@@ -40,7 +40,7 @@
     #16a34a 80%,
     transparent 100%
   );
-  opacity: 0.18;
+  opacity: 0.1;
   border-radius: 50%;
   z-index: 0;
   animation: floatShape 6s ease-in-out infinite alternate;
@@ -67,12 +67,12 @@
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1.2rem;
-  letter-spacing: -1px;
-  text-shadow: 0 2px 16px rgba(34, 211, 238, 0.12);
-  animation: slideInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  text-shadow: none;
+  animation: slideInDown 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes slideInDown {
@@ -87,11 +87,11 @@
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  max-width: 40rem;
-  margin: 0 auto 2.5rem;
-  color: #e0f2fe;
-  animation: fadeIn 1.5s 0.3s backwards;
+  font-size: 1.1rem;
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+  color: #e0e7ef;
+  animation: fadeIn 1s 0.2s backwards;
 }
 
 @keyframes fadeIn {
@@ -105,17 +105,17 @@
 
 .hero-button {
   display: inline-block;
-  background: linear-gradient(90deg, #22d3ee 0%, #16a34a 100%);
-  color: white;
-  padding: 0.85rem 2.2rem;
-  font-weight: 700;
-  font-size: 1.15rem;
-  border-radius: 2rem;
-  box-shadow: 0 4px 24px 0 rgba(34, 211, 238, 0.18);
+  background: #2563eb;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
   border: none;
   cursor: pointer;
-  transition: transform 0.18s, box-shadow 0.18s, background 0.3s;
-  animation: popIn 1.2s 0.5s backwards;
+  transition: background 0.2s, transform 0.15s;
+  animation: popIn 0.8s 0.3s backwards;
 }
 
 @keyframes popIn {
@@ -131,40 +131,39 @@
 
 .hero-button:hover,
 .hero-button:focus {
-  background: linear-gradient(90deg, #16a34a 0%, #22d3ee 100%);
+  background: #16a34a;
   color: #fff;
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 32px 0 rgba(34, 211, 238, 0.25);
+  transform: translateY(-2px) scale(1.03);
 }
 
 .section-title {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #0ea5e9;
-  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1rem;
   letter-spacing: -0.5px;
   text-align: center;
-  text-shadow: 0 2px 12px rgba(16, 185, 129, 0.08);
-  animation: fadeIn 1.2s 0.2s backwards;
+  text-shadow: none;
+  animation: fadeIn 0.8s 0.1s backwards;
 }
 
 .section-text {
-  max-width: 40rem;
+  max-width: 32rem;
   margin: 0 auto;
-  color: #334155;
-  font-size: 1.15rem;
-  line-height: 1.7;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
   text-align: center;
-  animation: fadeIn 1.2s 0.3s backwards;
+  animation: fadeIn 0.8s 0.2s backwards;
 }
 
 /* Add a subtle card effect for mission section if needed */
 .mission-section {
-  margin: 3rem auto 0;
-  padding: 2.5rem 1.5rem;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 24px 0 rgba(16, 185, 129, 0.07);
-  max-width: 700px;
-  animation: fadeIn 1.2s 0.4s backwards;
+  margin: 2rem auto 0;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(34, 211, 238, 0.04);
+  max-width: 600px;
+  animation: fadeIn 0.8s 0.2s backwards;
 }
