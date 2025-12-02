@@ -1,6 +1,6 @@
-# ReFood – Food Rescue Platform
+# ReFood - Food Rescue Platform
 
-**Live Demo:** 🌐 [https://refoodibm.netlify.app/](https://refoodibm.netlify.app/)
+**Live Demo:** 🌐 [https://refoodvg.netlify.app/](https://refoodvg.netlify.app/)
 
 ## 📌 Project Overview
 
@@ -12,21 +12,21 @@
 
 ## 🌟 Key Features
 
-* ✅ **Dark Mode Functionality** – Switch seamlessly between light and dark themes for optimal viewing.
-* 🎨 **Attractive & Eye-Catching UI** – A modern and responsive design with smooth animations and vibrant colors.
-* 📱 **Responsive Design** – Works flawlessly across desktops, tablets, and smartphones.
-* 📋 **Join Form** – Allow users to sign up as a donor, volunteer, or partner.
-* 🧹 **Modular Codebase** – Clean component-based React architecture.
+* ✅ **Dark Mode Functionality** - Switch seamlessly between light and dark themes for optimal viewing.
+* 🎨 **Attractive & Eye-Catching UI** - A modern and responsive design with smooth animations and vibrant colors.
+* 📱 **Responsive Design** - Works flawlessly across desktops, tablets, and smartphones.
+* 📋 **Join Form** - Allow users to sign up as a donor, volunteer, or partner.
+* 🧹 **Modular Codebase** - Clean component-based React architecture.
 
 ---
 
 ## 🛠️ Technologies Used
 
-* **React.js** – Frontend framework
-* **React Router** – Client-side routing
-* **Lucide Icons** – For minimal and modern iconography
-* **CSS** – Custom styling in a single global file (`index.css`)
-* **Netlify** – For live deployment
+* **React.js** - Frontend framework
+* **React Router** - Client-side routing
+* **Lucide Icons** - For minimal and modern iconography
+* **CSS** - Custom styling in a single global file (`index.css`)
+* **Netlify** - For live deployment
 
 ---
 
@@ -63,4 +63,4 @@ Pull requests and suggestions are welcome! If you have ideas for new features or
 ###  Made with ❤️ by **Vivaan Garg**
 
 > *"The smallest act of kindness is worth more than the grandest intention."*
-> – Oscar Wilde
+> - Oscar Wilde
