@@ -15,7 +15,7 @@ export default function Join() {
       <section className="join-header">
         <h1 className="join-title">Join the Movement</h1>
         <p className="join-subtitle">
-          Whether you’re a volunteer, donor, or food partner — you can make an
+          Whether you’re a volunteer, donor, or food partner - you can make an
           impact.
         </p>
       </section>

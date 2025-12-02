@@ -22,7 +22,7 @@ export default function Home() {
         <h2 className="section-title">Our Mission</h2>
         <p className="section-text">
           Every year, tons of perfectly edible food goes to waste. Meanwhile,
-          millions face hunger daily. ReFood bridges this gap — collecting
+          millions face hunger daily. ReFood bridges this gap - collecting
           surplus food and delivering it to those in need. Our mission is to
           ensure that no good food goes to waste while nourishing communities.
         </p>

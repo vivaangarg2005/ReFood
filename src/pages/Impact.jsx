@@ -18,7 +18,7 @@ export default function Impact() {
     {
       name: "Maria, Volunteer",
       quote:
-        "Volunteering with ReFood gave me purpose. I see the faces of the people we help — and it’s incredibly fulfilling.",
+        "Volunteering with ReFood gave me purpose. I see the faces of the people we help - and it’s incredibly fulfilling.",
     },
   ];
 
@@ -28,7 +28,7 @@ export default function Impact() {
       <section className="impact-header">
         <h1 className="impact-title">Our Impact</h1>
         <p className="impact-subtitle">
-          From tons of food rescued to thousands of lives touched — your support
+          From tons of food rescued to thousands of lives touched - your support
           drives our mission forward.
         </p>
       </section>
@@ -56,7 +56,7 @@ export default function Impact() {
             {stories.map((story, index) => (
               <div key={index} className="impact-testimonial-card">
                 <p className="impact-testimonial-quote">“{story.quote}”</p>
-                <p className="impact-testimonial-name">— {story.name}</p>
+                <p className="impact-testimonial-name">- {story.name}</p>
               </div>
             ))}
           </div>

@@ -3,15 +3,40 @@ import "./Contact.css";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError(""); // Clear previous error
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/mqajdbaz", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      setLoading(false);
+
+      if (res.ok) {
+        setSent(true);
+        form.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Unable to send message. Check your internet connection.");
+      setLoading(false);
+    }
   };
 
   return (
     <div className="contact-page">
-      {/* Header */}
       <section className="contact-header">
         <h1 className="contact-title">Contact Us</h1>
         <p className="contact-subtitle">
@@ -20,29 +45,51 @@ export default function Contact() {
         </p>
       </section>
 
-      {/* Contact Section */}
       <section className="contact-section">
         <div className="contact-container">
-          {/* Form */}
           <div className="contact-form-card">
             <h2 className="contact-form-heading">Send a Message</h2>
 
             {!sent ? (
               <form onSubmit={handleSubmit} className="contact-form">
+                {error && <div className="form-error">{error}</div>}
+
                 <div className="form-group">
                   <label className="form-label">Name</label>
-                  <input type="text" required className="form-input" />
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    className="form-input"
+                  />
                 </div>
+
                 <div className="form-group">
                   <label className="form-label">Email</label>
-                  <input type="email" required className="form-input" />
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    className="form-input"
+                  />
                 </div>
+
                 <div className="form-group">
                   <label className="form-label">Message</label>
-                  <textarea rows="5" required className="form-input"></textarea>
+                  <textarea
+                    rows="5"
+                    name="message"
+                    required
+                    className="form-input"
+                  ></textarea>
                 </div>
-                <button type="submit" className="submit-button">
-                  Send
+
+                <button
+                  type="submit"
+                  className="submit-button"
+                  disabled={loading}
+                >
+                  {loading ? "Sending..." : "Send"}
                 </button>
               </form>
             ) : (
@@ -52,7 +99,6 @@ export default function Contact() {
             )}
           </div>
 
-          {/* Info */}
           <div className="contact-info">
             <h2 className="contact-form-heading">Contact Info</h2>
             <p>

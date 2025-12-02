@@ -8,7 +8,7 @@ export default function Services() {
       title: "Food Collection",
       icon: <Warehouse className="service-icon" />,
       description:
-        "We collect surplus food from restaurants, grocery stores, farms, and events — safely and efficiently.",
+        "We collect surplus food from restaurants, grocery stores, farms, and events - safely and efficiently.",
     },
     {
       title: "Sorting & Storage",
@@ -20,7 +20,7 @@ export default function Services() {
       title: "Volunteer Network",
       icon: <HelpingHand className="service-icon" />,
       description:
-        "Our volunteers form the heart of the operation — managing pickups, packaging, and delivery.",
+        "Our volunteers form the heart of the operation - managing pickups, packaging, and delivery.",
     },
     {
       title: "Last-Mile Delivery",
@@ -38,7 +38,7 @@ export default function Services() {
           <h1 className="services-title">How It Works</h1>
           <p className="services-subtitle">
             Our system is designed to make food rescue fast, safe, and
-            community-powered — from pickup to plate.
+            community-powered - from pickup to plate.
           </p>
         </div>
       </section>

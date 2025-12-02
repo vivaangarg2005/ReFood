@@ -20,7 +20,7 @@ export default function About() {
         <div className="about-content">
           <h2 className="section-heading">Our Story</h2>
           <p className="section-paragraph">
-            ReFood started with a simple idea — that good food should never go
+            ReFood started with a simple idea - that good food should never go
             to waste while people go hungry. What began as a community effort
             has grown into a national initiative connecting food donors,
             volunteers, and those in need.
@@ -47,7 +47,7 @@ export default function About() {
             <div className="value-card">
               <h3 className="value-title">Equity</h3>
               <p className="value-text">
-                Ensuring access to nutritious food for all — regardless of
+                Ensuring access to nutritious food for all - regardless of
                 income or status.
               </p>
             </div>
